@@ -20,15 +20,16 @@ int p_pop_err(unsigned int line_number)
 
 
 /**
- * print_empty_stack_err - this prints error messages for empty stacks when using pint
+ * print_empty_stack_err - this prints error messages for empty
+ * stacks when using pint
  * @line_number: line number in Monty bytecodes file where error occurred
  * Return: (EXIT_FAILURE) always
  */
 
 int print_empty_stack_err(unsigned int line_number)
 {
-    fprintf(stderr, "L%d: can't pint, stack empty\n", line_number);
-    return (EXIT_FAILURE);
+	fprintf(stderr, "L%d: can't pint, stack empty\n", line_number);
+	return (EXIT_FAILURE);
 }
 
 

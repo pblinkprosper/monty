@@ -50,7 +50,7 @@ int file_open_err(char *filename)
  * Return: (EXIT_FAILURE) always
  */
 
-int unknown_opcode_err(char *opcode, unsigned int line_number)
+int unknwn_opcode_err(char *opcode, unsigned int line_number)
 {
 	fprintf(stderr, "L%u: unknown instruction %s\n",
 		line_number, opcode);
